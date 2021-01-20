@@ -1,101 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-div.gallery {
-  border: 1px solid #ccc;
+  <head>
+    <title>Polaroid Photo Gallery</title>
+    <style>
+      
+      body{
+  background-color: #dedede;
 }
-
-div.gallery:hover {
+.gallery{
+  display: flex;
+  width: 900px;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+figure{
+  width: 200px;
+  margin: 8px 0;
   border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
+  padding: 8px;
   box-sizing: border-box;
+  background-color: #fff;
 }
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+figure img{
+  width: 100%;
 }
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
+figure figcaption{
+  text-align: center;
+  padding: 8px 4px;
 }
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-</head>
-<body>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="https://raw.githubusercontent.com/almrnd/Al-Mahdi-Research-and-Development-Center/master/img/assets/ourmotivation/ayt-khomenie.jpg">
-      <img src="https://raw.githubusercontent.com/almrnd/Al-Mahdi-Research-and-Development-Center/master/img/assets/ourmotivation/ayt-khomenie.jpgg" alt="Ayatollah Ruhollah Musavi Khomeini" width="600" height="400">
-    </a>
-    <div class="desc">Ayatollah Ruhollah Musavi Khomeini</div>
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_forest.jpg">
-      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
-
-<div class="clearfix"></div>
-
-<div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>
-
-</body>
+      </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <figure>
+        <img src="https://raw.githubusercontent.com/almrnd/Al-Mahdi-Research-and-Development-Center/master/img/assets/ourmotivation/ayt-khomenie.jpg">
+        <figcaption>Ayatollah Ruhollah Musavi Khomeini</figcaption>
+      </figure>
+      
+    </div>
+  </body>
 </html>
